@@ -1,4 +1,5 @@
 #include "VectorMathHelpers.h"
+#include "MathConstants.h"
 
 // get linear distance between 2 points. 2Dxz calculation
 static float CalculateDistance2D(Vector2 a_TipPosition, Vector2 a_TailPosition)

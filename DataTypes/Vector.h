@@ -13,7 +13,7 @@
 // TODO: Look at operator== for float value comparison
 // TODO: inline?
 // TODO: fequal
-#include "Math/MathHelpers.h"
+#include "../Libraries/Math/MathHelpers.h"
 
 #include <cmath> // sqrt
 
@@ -84,7 +84,7 @@ struct Vector3
 	Vector3(const float value) { x = value; y = value; z = value; }
 	Vector3(const float valueX, float valueY, float valueZ) { x = valueX; y = valueY; z = valueZ; }
 	Vector3(const int value) { x = (float)value; y = (float)value; z = (float)value; }
-	Vector3(const int valueX, int valueY, int valueZ) { x = (float)valueX; y = (float)valueY; z = valueZ; }
+	Vector3(const int valueX, int valueY, int valueZ) { x = (float)valueX; y = (float)valueY; z = (float)valueZ; }
 
 	~Vector3() {}
 
@@ -142,7 +142,7 @@ struct Vector4
 	Vector4(const float value) { x = value; y = value; }
 	Vector4(const float valueX, const float valueY, float valueZ, float valueW) { x = valueX; y = valueY; z = valueZ; w = valueW; }
 	Vector4(const int value) { x = (float)value; y = (float)value; z = (float)value; w = (float)value; }
-	Vector4(const int valueX, const int valueY, const int valueZ, const int valueW) { x = (float)valueX; y = (float)valueY; z = (float)valueZ; w = valueW; }
+	Vector4(const int valueX, const int valueY, const int valueZ, const int valueW) { x = (float)valueX; y = (float)valueY; z = (float)valueZ; w = (float)valueW; }
 
 	~Vector4() {}
 

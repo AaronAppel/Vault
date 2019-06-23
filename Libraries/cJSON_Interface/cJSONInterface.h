@@ -65,7 +65,7 @@ void AddItemToObject(cJSON* cJSONObject, cJSON* item);
 //*- Adding To Arrays -*
 void AddItemsToArray(cJSON* cJSONArray, std::vector<cJSON*> cJSONItems); // TODO::
 
-void AddItemToArray(cJSON* cJSONArray, cJSON* item); // TODO::
+void AddItemToArray(cJSON* cJSONArray, cJSON* item); // TODO:: Think of returning the new item to be used
 
 //// Replacing Items In File ////
 //*- Replacing Object Items -*

@@ -1,5 +1,5 @@
-#include "../../QwerkE_Framework/QwerkE_Defines.h"
-#include "../../QwerkE_Framework/QwerkE_Platform.h"
+#include "../../Headers/QwerkE_Defines.h"
+#include "../../Headers/QwerkE_Platform.h"
 #include "PrintFunctions.h"
 
 // #include <cstdio> // vsnprintf_s
