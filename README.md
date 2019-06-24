@@ -17,3 +17,4 @@ This project is licensed under the BSD 3clause license, however this project inc
 - OpenAL: www.openal.org  
 - libusb: www.github.com/libusb/libusb  
 // - vlc: www.github.com/videolan/vlc  
+- nVidia: https://developer.nvidia.com/nvidia-video-codec-sdk, https://developer.nvidia.com/cuda-toolkit
