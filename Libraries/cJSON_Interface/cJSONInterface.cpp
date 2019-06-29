@@ -102,7 +102,7 @@ cJSON* GetItemFromObjectByKey(cJSON* cJSONObject, const char* key)
 	for (int i = 0; i < arraySize; i++)
 	{
 		cJSON* item = cJSON_GetArrayItem(cJSONObject, i);
-		if (*item->string == *key)
+		if (strcmp(item->string, key) == 0)
 		{
 			return item;
 		}
