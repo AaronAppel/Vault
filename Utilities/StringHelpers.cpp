@@ -1,5 +1,4 @@
 #include "StringHelpers.h"
-#include <sstream>
 
 const char* StringAppend(const char* a, const char* b)
 {
@@ -94,10 +93,7 @@ bool SearchForString(std::string line, std::string word)
 
 int StringToInt(const char* string)
 {
-	std::stringstream stream(string);
-	int x = 0;
-	stream >> x;
-	return x;
+	return std::strtol(string, nullptr, 10);
 }
 
 const char* ReverseString(std::string value)

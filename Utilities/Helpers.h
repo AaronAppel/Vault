@@ -1,5 +1,5 @@
-#ifndef __Helpers_H__
-#define __Helpers_H__
+#ifndef _Helpers_H_
+#define _Helpers_H_
 
 double helpers_Time();
 
@@ -42,4 +42,4 @@ int CharToInt(char num);
 
 void* VoidCheck(void* check);
 
-#endif //__Helpers_H__
+#endif // !_Helpers_H_

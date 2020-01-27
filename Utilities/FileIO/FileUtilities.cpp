@@ -173,7 +173,7 @@ char* LoadFile(const char* filename)
 	}
 }
 // TODO: Deprecate?
-char* LoadCompleteFile(const char* filename, long* length)
+char* LoadCompleteFile(const char* filename, long* length = nullptr)
 {
 	char* filecontents = 0;
 

@@ -1,5 +1,5 @@
-#ifndef __SmartPointer_H__
-#define __SmartPointer_H__
+#ifndef _SmartPointer_H_
+#define _SmartPointer_H_
 
 // TODO: Improve SmartPointer()
 
@@ -37,7 +37,7 @@ SmartPointer<PTR_VALUE_TYPE>::SmartPointer()
 template <class PTR_VALUE_TYPE>
 SmartPointer<PTR_VALUE_TYPE>::~SmartPointer()
 {
-	// TODO: Fix deltion errors
+	// TODO: Fix deletion errors
 	// Delete(); // Cleanup
 }
 
@@ -48,4 +48,4 @@ void SmartPointer<PTR_VALUE_TYPE>::operator=(PTR_VALUE_TYPE valueAddress)
 	m_Value = valueAddress;
 }
 
-#endif //!__SmartPointer_H__
+#endif // !_SmartPointer_H_
