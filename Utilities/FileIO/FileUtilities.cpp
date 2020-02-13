@@ -198,10 +198,10 @@ char* LoadCompleteFile(const char* filename, long* length = nullptr)
 
 	if (filecontents == 0)
 	{
-		OutputPrint("\nUtilityWin32: LoadCompleteFile() encountered errors loading \"%s\"-> ", filename);
+		LOG_ERROR("UtilityWin32: LoadCompleteFile() encountered errors loading \"%s\"-> ", filename);
 		if (error == 2)
 		{
-			OutputPrint("No such file or directory!");
+			LOG_ERROR("No such file or directory!");
 		}
 	}
 
@@ -223,7 +223,7 @@ unsigned char* LoadWaveFileData(const char* filePath, unsigned long& bufferSize,
 
 	if (!f)
 	{
-		OutputPrint("LoadWaveFileData(): Error opening file: %s", filePath);
+		LOG_ERROR("LoadWaveFileData(): Error opening file: %s", filePath);
 		return nullptr;
 	}
 
@@ -241,7 +241,7 @@ unsigned char* LoadWaveFileData(const char* filePath, unsigned long& bufferSize,
 	fread(type, 4, 1, f); // ChunkID "RIFF"
 	if (!strcmp(type, "RIFF"))
 	{
-		OutputPrint("LoadWaveFileData(): Not a \"RIFF\" file: %s", filePath);
+		LOG_ERROR("LoadWaveFileData(): Not a \"RIFF\" file: %s", filePath);
 		fclose(f);
 		return nullptr;
 	}
@@ -250,8 +250,8 @@ unsigned char* LoadWaveFileData(const char* filePath, unsigned long& bufferSize,
 
 	fread(type, 4, 1, f);
 	if (!strcmp(type, "WAVE"))
-	{
-		OutputPrint("LoadWaveFileData(): Not a \"WAVE\" file: %s", filePath);
+    {
+        LOG_ERROR("LoadWaveFileData(): Not a \"WAVE\" file: %s", filePath);
 		fclose(f);
 		return nullptr;
 	}
@@ -259,8 +259,8 @@ unsigned char* LoadWaveFileData(const char* filePath, unsigned long& bufferSize,
 	// read "fmt " chunk
 	fread(&subChunk1ID, 4, 1, f); // "fmt "
 	if (!strcmp(type, "fmt "))
-	{
-		OutputPrint("LoadWaveFileData(): No format found in file: %s", filePath);
+    {
+        LOG_ERROR("LoadWaveFileData(): No format found in file: %s", filePath);
 		fclose(f);
 		return nullptr;
 	}
@@ -280,7 +280,7 @@ unsigned char* LoadWaveFileData(const char* filePath, unsigned long& bufferSize,
 	fread(type, 4, 1, f);
 	if (!strcmp(type, "data"))
 	{
-		OutputPrint("LoadWaveFileData(): No data in file: %s", filePath);
+		LOG_ERROR("LoadWaveFileData(): No data in file: %s", filePath);
 		fclose(f);
 		return nullptr;
 	}
@@ -292,8 +292,8 @@ unsigned char* LoadWaveFileData(const char* filePath, unsigned long& bufferSize,
 	int result = fread(buffer, 1, bufferSize, f);
 
 	if (result != bufferSize || ferror(f) != 0)
-	{
-		OutputPrint("LoadWaveFileData(): Error reading data in file: %s", filePath);
+    {
+        LOG_ERROR("LoadWaveFileData(): Error reading data in file: %s", filePath);
 		fclose(f);
 		return nullptr;
 	}

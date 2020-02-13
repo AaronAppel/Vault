@@ -16,7 +16,7 @@ cJSON* OpencJSONStream(const char* fileDirectory)
 
 		if (root == nullptr)
 		{
-			OutputPrint("\nOpencJSONStream(): Could not open cJSON stream. Possible compile error. Check %s file for typos!\n\n", fileDirectory);
+			LOG_ERROR("OpencJSONStream(): Could not open cJSON stream. Possible compile error. Check %s file for typos!", fileDirectory);
 		}
 		return root;
 	}
@@ -35,7 +35,7 @@ std::vector<cJSON*> GetAllItemsFromObject(cJSON* cJSONObject)
 {
 	int arraySize = GetObjectSize(cJSONObject);
 
-	std::vector<cJSON *> returnList;
+	std::vector<cJSON*> returnList;
 
 	for (int i = 0; i < arraySize; i++)
 	{
@@ -48,7 +48,7 @@ std::vector<cJSON*> GetItemsFromObjectByKey(cJSON* cJSONObject, const char* key)
 {
 	int arraySize = cJSON_GetArraySize(cJSONObject);
 
-	std::vector<cJSON *> returnList;
+	std::vector<cJSON*> returnList;
 
 	for (int i = 0; i < arraySize; i++)
 	{
@@ -65,7 +65,7 @@ std::vector<cJSON*> GetItemsFromObjectByString(cJSON* cJSONObject, const char* v
 {
 	int arraySize = cJSON_GetArraySize(cJSONObject);
 
-	std::vector<cJSON *> returnList;
+	std::vector<cJSON*> returnList;
 
 	for (int i = 0; i < arraySize; i++)
 	{
@@ -134,9 +134,9 @@ cJSON* GetItemFromObjectByIndex(cJSON* cJSONObject, int index)
 	return cJSON_GetArrayItem(cJSONObject, index);
 }
 
-std::vector<cJSON *> GetAllItemsFromArray(cJSON* arrayObject) // return array of objects inside of an objectArray
+std::vector<cJSON*> GetAllItemsFromArray(cJSON* arrayObject) // return array of objects inside of an objectArray
 {
-	std::vector<cJSON *> itemList;
+	std::vector<cJSON*> itemList;
 
 	if (arrayObject->child == nullptr)
 	{
@@ -152,11 +152,11 @@ std::vector<cJSON *> GetAllItemsFromArray(cJSON* arrayObject) // return array of
 	return itemList;
 }
 
-std::vector<cJSON *> GetItemsFromArrayByKey(cJSON* jObjectArray, const char* key) // TODO:: BROKEN
+std::vector<cJSON*> GetItemsFromArrayByKey(cJSON* jObjectArray, const char* key) // TODO:: BROKEN
 {
 	int t_ArraySize = cJSON_GetArraySize(jObjectArray->child);
 
-	std::vector<cJSON *> itemList;
+	std::vector<cJSON*> itemList;
 
 	for (int i = 0; i < t_ArraySize; i++) // each immediate Object inside root
 	{
@@ -170,11 +170,11 @@ std::vector<cJSON *> GetItemsFromArrayByKey(cJSON* jObjectArray, const char* key
 	return itemList;
 }
 
-std::vector<cJSON *> GetItemsFromArrayByString(cJSON* cJSONArray, const char* value)
+std::vector<cJSON*> GetItemsFromArrayByString(cJSON* cJSONArray, const char* value)
 {
 	int arraySize = cJSON_GetArraySize(cJSONArray->child);
 
-	std::vector<cJSON *> returnList;
+	std::vector<cJSON*> returnList;
 
 	for (int i = 0; i < arraySize; i++)
 	{
@@ -579,7 +579,7 @@ bool json_FileExists(const char* filename) // TODO:: Move to helpers.h/.cpp
 {
 	FILE* filehandle;
 	fopen_s(&filehandle, filename, "r"); // returns error if no file to read
-										 //errno_t error = fopen_s(&filehandle, filename, "r");
+											//errno_t error = fopen_s(&filehandle, filename, "r");
 	if (filehandle)
 	{
 		fclose(filehandle); // close file stream
@@ -598,7 +598,7 @@ void json_CreateNewFile(const char* filename) // checks if file already exists
 
 	if (error == 0)
 	{
-		OutputPrint("\nCreateNewFile(): %s already exists\n\n", filename);
+		LOG_ERROR("CreateNewFile(): %s already exists", filename);
 		fclose(filehandle);
 	}
 	else if (filehandle == nullptr)
@@ -635,4 +635,4 @@ void PrintRootObjectToFile(const char* filename, cJSON* root)
 	const char* jSonstr = cJSON_Print(root);
 	WriteStringToFile(filename, jSonstr);
 	free((char*)jSonstr);
-}
+	}

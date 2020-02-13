@@ -44,7 +44,7 @@ bool XinputHandler::UpdatePlayerState(int player)
 		return true;
 	else
 	{
-		// if (m_Debugging) OutputMessage("\nXinputManager: Error reading gamepad state for Player %i", player];
+		// if (m_Debugging) OutputMessage("\nXInput: Error reading gamepad state for Player %i", player];
 		return false;
 	}
 }

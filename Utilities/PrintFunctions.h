@@ -1,7 +1,7 @@
-#ifndef _PrintFunctions_H_
-#define _PrintFunctions_H_
+#ifndef _Print_Functions_H_
+#define _Print_Functions_H_
 
 void OutputPrint(const char* message, ...);
 void ConsolePrint(const char* message);
 
-#endif // _PrintFunctions_H_
+#endif // _Print_Functions_H_

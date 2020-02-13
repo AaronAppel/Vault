@@ -1,5 +1,5 @@
-#ifndef __CJSONINTERFACE_H__
-#define __CJSONINTERFACE_H_
+#ifndef _CJSONINTERFACE_H_
+#define _CJSONINTERFACE_H_
 
 #include "cJSON.h"
 #include <vector>
@@ -125,11 +125,11 @@ void AddNumberToArray();
 //// Copy Root ////
 cJSON* CopyRootObject(cJSON* root);
 
-//// Heplers ////
+//// Helpers ////
 bool json_FileExists(const char* filename);
 void json_CreateNewFile(const char* filename);
 #define EmptycJSONFile(a) CreateEmptycJSONFile(a)
-void CreateEmptycJSONFile(const char* filePath);
+void CreateEmptycJSONFile(const char* filePath); // TODO: Return error status?
 
 int GetObjectSize(cJSON* cJSONObject);
 int GetArraySize(cJSON* cJSONArray);
@@ -147,4 +147,4 @@ cJSON* DeepSearchForItemByKey(cJSON* object, const char* key); // TODO:: Test
 // Cleanup variable and function names for readability
 // organize .h and .cpp files to be correct order and properly commented
 
-#endif //__CJSONINTERFACE_H__
+#endif // !_CJSONINTERFACE_H_
