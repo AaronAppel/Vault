@@ -131,8 +131,8 @@ void json_CreateNewFile(const char* filename);
 #define EmptycJSONFile(a) CreateEmptycJSONFile(a)
 void CreateEmptycJSONFile(const char* filePath); // TODO: Return error status?
 
-int GetObjectSize(cJSON* cJSONObject);
-int GetArraySize(cJSON* cJSONArray);
+unsigned int GetObjectSize(cJSON* cJSONObject);
+unsigned int GetArraySize(cJSON* cJSONArray);
 
 //cJSON* DuplicatecJSON(cJSON* cJSON) { return nullptr; }; // TODO::
 

@@ -14,7 +14,6 @@
 #include "../../../QwerkE_Common/Libraries/glew/GL/glew.h"
 #include "MathConstants.h"
 
-
 void MyMatrix::SetIdentity()
 {
     m12 = m13 = m14 = m21 = m23 = m24 = m31 = m32 = m34 = m41 = m42 = m43 = 0;

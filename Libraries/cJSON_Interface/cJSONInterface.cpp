@@ -16,7 +16,7 @@ cJSON* OpencJSONStream(const char* fileDirectory)
 
 		if (root == nullptr)
 		{
-			LOG_ERROR("OpencJSONStream(): Could not open cJSON stream. Possible compile error. Check %s file for typos!", fileDirectory);
+			LOG_ERROR("OpencJSONStream(): Could not open cJSON stream. Possible compile error. Check {0} file for typos!", fileDirectory);
 		}
 		return root;
 	}
@@ -516,12 +516,12 @@ cJSON* CopyRootObject(cJSON* root)
 	return cJSON_Parse(newRoot);
 }
 
-int GetObjectSize(cJSON* cJSONObject)
+unsigned int GetObjectSize(cJSON* cJSONObject)
 {
 	return cJSON_GetArraySize(cJSONObject);
 }
 
-int GetArraySize(cJSON* cJSONArray)
+unsigned int GetArraySize(cJSON* cJSONArray)
 {
 	return cJSON_GetArraySize(cJSONArray->child);
 }
@@ -598,7 +598,7 @@ void json_CreateNewFile(const char* filename) // checks if file already exists
 
 	if (error == 0)
 	{
-		LOG_ERROR("CreateNewFile(): %s already exists", filename);
+		LOG_ERROR("CreateNewFile(): {0} already exists", filename);
 		fclose(filehandle);
 	}
 	else if (filehandle == nullptr)

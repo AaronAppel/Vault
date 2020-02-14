@@ -13,16 +13,16 @@
 class MyQuat
 {
 public:
-    float x;
-    float y;
-    float z;
-    float w;
+    float x = 0;
+    float y = 0;
+    float z = 0;
+    float w = 0;
 
 public:
     MyQuat() {}
-    MyQuat(Vector3 nv, float nw) { x = nv.x; y = nv.y; z = nv.z; w = nw; }
-    MyQuat(Vector4 nv) { x = nv.x; y = nv.y; z = nv.z; w = nv.w; }
-    MyQuat(float nx, float ny, float nz, float nw) { x = nx; y = ny; z = nz; w = nw; }
+    MyQuat(Vector3 nv, float nw) : x(nv.x), y(nv.y), z(nv.z), w(nw) {}
+    MyQuat(Vector4 nv) : x(nv.x), y(nv.y), z(nv.z), w(nv.w) {}
+    MyQuat(float nx, float ny, float nz, float nw) : x(nx), y(ny), z(nz), w(nw) {}
 
     inline void Set(float nx, float ny, float nz, float nw) { x = nx; y = ny; z = nz; w = nw; }
     inline float LengthSquared() const { return x*x + y*y + z*z + w*w; }
