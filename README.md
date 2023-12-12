@@ -13,7 +13,7 @@ This project is licensed under the BSD 3clause license, however this project inc
 - imgui: github.com/ocornut/imgui
 - libusb: github.com/libusb/libusb
 - lodepng: github.com/lvandeve/lodepng
-- OpenAL: openal.org https://github.com/kcat/openal-soft
+- OpenAL: openal.org github.com/kcat/openal-soft
 - pthreads: github.com/coapp-packages/pthreads
 - RakNet: github.com/facebookarchive/RakNet
 - stb_image: github.com/nothings/stb
