@@ -19,3 +19,4 @@ This project is licensed under the BSD 3clause license, however this project inc
 - RakNet: github.com/facebookarchive/RakNet
 - spdlog: github.com/gabime/spdlog
 - stb_image: github.com/nothings/stb
+and any more that may be missing from this list...
