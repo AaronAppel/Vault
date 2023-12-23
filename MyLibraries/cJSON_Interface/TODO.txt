@@ -1,0 +1,2 @@
+Link to or submodule cJSON instead of storing the file in this repo.
+Keep personal/custom cJSONInterface code that I wrote
