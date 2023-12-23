@@ -9,4 +9,3 @@ AssetReferences.txt
 
 ## 3rd Party Libraries I found interesting
 LibraryReferences.txt
-and more...
