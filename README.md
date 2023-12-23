@@ -1,9 +1,10 @@
-# QwerkE_Common
-A project to store and manage libraries and utilities used in the QwerkEngine framework.
+# Vault
+A repository to store things I found useful, like old code or libraries I found interesting.
+Currently a graveyard for old code or past projects, either WIP, incomplete, or undefined.
 
-This project is licensed under the BSD 3clause license, however this project includes several 3rd party libraries. If you would like to use any of those libraries please follow their respective licenses. Links to libraries can be found below.
+*Kindly observe and respect any and all licenses to code and other assets in this repo."
 
-## 3rd Party Libraries
+## 3rd Party Libraries I found interesting
 - assimp: github.com/assimp/assimp
 - bullet3: github.com/bulletphysics/bullet3
 - cjson: github.com/DaveGamble/cJSON
@@ -19,4 +20,4 @@ This project is licensed under the BSD 3clause license, however this project inc
 - RakNet: github.com/facebookarchive/RakNet
 - spdlog: github.com/gabime/spdlog
 - stb_image: github.com/nothings/stb
-and any more that may be missing from this list...
+and more...
