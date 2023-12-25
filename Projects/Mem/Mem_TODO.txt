@@ -1,0 +1,10 @@
+Improve testing api:
+- List test suite names in menu. Maybe create a base TestCase class to subclass from
+
++ Write results to a file for quick comparisons between Mem and new, but also from last runs
+    Maybe use an excel spreadsheet for data management. This could make runtime value changing simple
+
++ Create a logger class for controlling output
+    This could help formatting output for comparing results
+
++ Move Source folder up a directory

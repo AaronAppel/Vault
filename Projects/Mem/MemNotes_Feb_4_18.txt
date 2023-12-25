@@ -1,0 +1,18 @@
+case 10 - pool
+size = 1000
+--J310--
+Mem: 1.83952 // Full block, remove front to back
+Mem: 0.23505 // full block, remove back to front
+New: 0.0592735
+--home--
+Mem: 2.84734 // Full block, remove front to back
+Mem: 0.34102 // full block, remove back to front
+New: 0.0978633
+
+size = 100000
+--J310--
+
+--home--
+Mem: 45067.0000 // Full block, remove front to back
+Mem:    30.9230 // full block, remove back to front
+New:    10.4158

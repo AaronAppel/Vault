@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Blocks">
+      <UniqueIdentifier>{2b0a9fb0-82c2-48a5-a62b-574a4c829066}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{9c4a0db5-4ea4-456b-981a-69d747e65a3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Testing">
+      <UniqueIdentifier>{48451a72-19d5-4224-bf0a-7f48a3dee1be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Allocators">
+      <UniqueIdentifier>{b45eaf62-2d69-4356-8bae-ce0fe6eeba4a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Mem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TestUtils.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TestSuite1.cpp">
+      <Filter>Testing</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MemFlagBlock.cpp">
+      <Filter>Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MemBlock.cpp">
+      <Filter>Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MemStackAllocator.cpp">
+      <Filter>Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MemSmrtPtr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TestClasses.cpp">
+      <Filter>Testing</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MemBasicBlock.cpp">
+      <Filter>Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MemPoolAllocator.cpp">
+      <Filter>Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Mem1FrameStackAllocator.cpp">
+      <Filter>Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Mem2FrameStackAllocator.cpp">
+      <Filter>Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\TestUtils.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TestSuite1.h">
+      <Filter>Testing</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\MemFlagBlock.h">
+      <Filter>Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\MemBlock.h">
+      <Filter>Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\MemStackAllocator.h">
+      <Filter>Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\MemSmrtPtr.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TestClasses.h">
+      <Filter>Testing</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\MemBasicBlock.h">
+      <Filter>Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\MemPoolAllocator.h">
+      <Filter>Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Mem1FrameStackAllocator.h">
+      <Filter>Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Mem2FrameStackAllocator.h">
+      <Filter>Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\MathHelpers.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\Vector.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Main.h" />
+    <ClInclude Include="Source\Mem.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
