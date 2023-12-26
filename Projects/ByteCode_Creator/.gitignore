@@ -1,0 +1,17 @@
+.vs/
+
+*.tlog
+*.log
+*.pdb
+*.idb
+*.ilk
+*.exe
+*.ipch
+*.pch
+*.VC.db
+*.suo
+*.opendb
+*.obj
+*.dll
+
+Debug/*

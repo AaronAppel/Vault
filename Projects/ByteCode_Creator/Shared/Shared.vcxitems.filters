@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Character.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Compiler.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)enums.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)FileUtils.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)InstructionBlock.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Interpreter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Item.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SetupLibraries.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)CompilerStack.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)PrintFuncs.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)StringHelpers.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Graphics\MathFunctions.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Graphics\MathHelpers.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Graphics\Vector.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Graphics\VectorMathHelpers.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Libraries\glew\GL\eglew.h">
+      <Filter>Libraries\glew</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Libraries\glew\GL\glew.h">
+      <Filter>Libraries\glew</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Libraries\imgui\imconfig.h">
+      <Filter>Libraries\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Libraries\imgui\imgui.h">
+      <Filter>Libraries\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Libraries\imgui\imgui_impl_glfw_gl3.h">
+      <Filter>Libraries\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Libraries\imgui\imgui_internal.h">
+      <Filter>Libraries\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Libraries\imgui\stb_truetype.h">
+      <Filter>Libraries\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Libraries\imgui\stb_rect_pack.h">
+      <Filter>Libraries\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Libraries\imgui\stb_textedit.h">
+      <Filter>Libraries\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Libraries\glew\GL\glxew.h">
+      <Filter>Libraries\glew</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Libraries\glew\GL\wglew.h">
+      <Filter>Libraries\glew</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Libraries\glfw\GLFW\glfw3native.h">
+      <Filter>Libraries\glfw</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Libraries\glfw\GLFW\glfw3.h">
+      <Filter>Libraries\glfw</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Graphics\ImageHelpers.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Libraries\lodepng\lodepng.h">
+      <Filter>Libraries\lodepng</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Graphics\Mesh\mesh.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Graphics\Mesh\MeshFactory.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Graphics\Mesh\MeshUtilities.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Graphics\Mesh\VertexData.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Graphics\SetupGraphics.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Graphics\ShaderProgram\ShaderFactory.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Graphics\ShaderProgram\ShaderProgram.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Graphics\Sprite\Sprite.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)OpenGLHelpers.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Graphics\MyMatrix.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Graphics\MyQuaternion.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Libraries">
+      <UniqueIdentifier>{6f216807-9d0e-4fae-9d58-fdfc5ed107e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\imgui">
+      <UniqueIdentifier>{a9c5f023-96d2-402a-8159-71ee02a2b6ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\glfw">
+      <UniqueIdentifier>{512f8d21-357a-48b5-b09f-927a4d4c6eb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\glew">
+      <UniqueIdentifier>{d6b8666b-6f3c-492a-8e03-8a9be67800b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{fd2da665-3fe1-460c-8adf-c92d23337338}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\lodepng">
+      <UniqueIdentifier>{8d0af900-a35e-4678-ae5f-21135214a5b2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)SetupLibraries.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Interpreter.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)StringHelpers.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)PrintFuncs.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)FileUtils.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Graphics\ShaderProgram\Basic2DShader.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Graphics\ShaderProgram\Basic3DShader.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Libraries\imgui\imgui.cpp">
+      <Filter>Libraries\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Libraries\imgui\imgui_demo.cpp">
+      <Filter>Libraries\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Libraries\imgui\imgui_draw.cpp">
+      <Filter>Libraries\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Libraries\imgui\imgui_impl_glfw_gl3.cpp">
+      <Filter>Libraries\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Graphics\ImageHelpers.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Libraries\lodepng\lodepng.cpp">
+      <Filter>Libraries\lodepng</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Graphics\Mesh\Mesh.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Graphics\Mesh\MeshFactory.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Graphics\Mesh\MeshUtilities.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Graphics\ShaderProgram\LitMaterial.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Graphics\ShaderProgram\ShaderFactory.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Graphics\ShaderProgram\ShaderProgram.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Graphics\Sprite\Sprite.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)OpenGLHelpers.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Graphics\MyMatrix.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
