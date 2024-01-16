@@ -1,7 +1,7 @@
 #ifndef _MemStackAllocator_H_
 #define _MemStackAllocator_H_
 
-class MemNode;
+struct MemNode;
 
 class MemStackAllocator
 {

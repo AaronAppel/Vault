@@ -39,7 +39,7 @@ int main()
 	int currentNumTowers = 0;
 	GraphNode* headNode = nullptr;
 
-    srand(time(NULL)); // seed RNG
+    srand(NULL); // seed RNG
 
     do
     {

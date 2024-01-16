@@ -1,7 +1,7 @@
 #ifndef _MemPoolAllocator_H_
 #define _MemPoolAllocator_H_
 
-class MemNode;
+struct MemNode;
 
 class MemPoolAllocator
 {

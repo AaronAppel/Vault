@@ -93,12 +93,14 @@ MemPoolAllocator* NewPoolAllocator(std::size_t cellSize, std::size_t cellCount);
 
 // New + Delete operator overrides
 /* THIS IS THE ONLY PLACE NEW AND DELETE SHOULD BE SEEN IN MEM */
-/* USE PROCURE() AND RELEASE FUNCTIONS */
+/* USE PROCURE() AND RELEASE() FUNCTIONS */
+#pragma warning ( disable : 28251)
 void* operator new(std::size_t size);
 void operator delete(void* object);
 
 void* operator new[](std::size_t size);
 void operator delete[](void* object);
+#pragma warning ( default : 28251)
 
 // Private/Internal
 void* Procure_RAM(std::size_t size); // TODO: hide in .cpp file to prevent end user access

@@ -3,7 +3,7 @@
 
 // No remove or deletion interface, only NewFrame()
 
-class MemNode;
+struct MemNode;
 
 class Mem2FrameStackAllocator
 {
