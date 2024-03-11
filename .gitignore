@@ -1,0 +1,24 @@
+.vs/
+
+*.tlog
+*.log
+*.pdb
+*.idb
+*.ilk
+*.exe
+*.ipch
+*.pch
+*.VC.db
+*.suo
+*.opendb
+*.obj
+
+*.dll
+
+// Local build files
+Debug/*
+Release/*
+x86/*
+x64/*
+
+Projects/TowerHopper/.vs/
